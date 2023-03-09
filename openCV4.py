@@ -4,7 +4,7 @@
 import cv2
 
 # Read Image
-img = cv2.imread(r'E:\Python\Projects\Pantech Solutions - Internships\AI Internship\Day 3\Untitled.png')
+img = cv2.imread('Untitled.png')
 
 # Image Properties
 print(img.size)
@@ -15,7 +15,7 @@ print(img.dtype)
 grayImg = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
 # Write Image
-cv2.imwrite("E:\Python\Projects\Pantech Solutions - Internships\AI Internship\Day 3\GrayImage.jpg",grayImg)
+cv2.imwrite("GrayImage.jpg",grayImg)
 
 # Show Original & Grayscale image
 cv2.imshow("Original",img)
